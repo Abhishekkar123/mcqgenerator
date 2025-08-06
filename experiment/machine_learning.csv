@@ -1,0 +1,6 @@
+,MCQ,Choices,Correct
+0,Who coined the term 'machine learning' in 1959?,a : Alan Turing | b : Donald Hebb | c : Arthur Samuel | d : Warren McCulloch,c
+1,What was the earliest machine learning program introduced in the 1950s?,a : A computer program for stock trading | b : A computer program for calculating winning chances in checkers | c : A program for analyzing sonar signals | d : A program for recognizing 40 characters from a computer terminal,b
+2,Which researcher introduced a theoretical neural structure formed by certain interactions among nerve cells in 1949?,a : Alan Turing | b : Donald Hebb | c : Warren McCulloch | d : Arthur Samuel,b
+3,"Tom M. Mitchell provided a formal definition of the algorithms studied in the machine learning field in the 1980s. According to this definition, what does a computer program learn from experience?",a : A computer program learns to mimic human emotions | b : A computer program learns to perform tasks that humans can do | c : A computer program learns to improve its performance at tasks based on past experiences | d : A computer program learns to analyze sonar signals,c
+4,Modern-day machine learning has two main objectives. One is to do what exactly?,a : Classify data based on models | b : Predict future outcomes based on models | c : Analyze sonar signals | d : Mimic human emotions,a
