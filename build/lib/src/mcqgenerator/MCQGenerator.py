@@ -11,19 +11,21 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
+from langchain_community.chat_models import ChatOpenA
 # from langchain.callbacks import get_openai_callback
 
 
 
 load_dotenv()
 
-KEY=os.getenv('api_key')
+KEY=os.getenv("OPENAI_API_KEY")
+# print(KEY)
 
 llm=ChatOpenAI(
     model="mistralai/mistral-7b-instruct:free",
-    openai_api_key=KEY,  # your OpenRouter key
+    api_key=KEY,  # your OpenRouter key
     base_url="https://openrouter.ai/api/v1",
-    temperature=0.3,)
+    temperature=0.5,)
 
 TEMPLATE="""
 Text:{text}
@@ -56,7 +58,7 @@ Quiz_MCQs:
 
 Check from an expert English Writer of the above quiz:
 """
-quiz_evaluation_prompt=PromptTemplate(input_variables=['subject','quiz'],template=TEMPLATE2)
+quiz_evaluation_prompt=PromptTemplate(input_variables=['subject','quiz'],template=TEMPLATE)
 
 
 review_chain=LLMChain(llm=llm,prompt=quiz_evaluation_prompt,output_key="review",verbose=True)
