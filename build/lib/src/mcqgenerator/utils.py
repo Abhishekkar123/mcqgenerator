@@ -25,8 +25,9 @@ def read_file(file):
 
 def get_table_data(quiz_str):
     try:
+        quiz_json = quiz_str.split("### RESPONSE_JSON")[-1].strip()
         # convert the quiz from a str to dict
-        quiz_dict=json.loads(quiz_str)
+        quiz_dict=json.loads(quiz_json)
         quiz_table_data=[]
         
         # iterate over the quiz dictionary and extract the required information

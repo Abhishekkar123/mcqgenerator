@@ -11,7 +11,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
-from langchain_community.chat_models import ChatOpenA
+from langchain_community.chat_models import ChatOpenAI
 # from langchain.callbacks import get_openai_callback
 
 
